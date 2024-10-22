@@ -15,7 +15,8 @@
 }
 .video-player{
     width: 800px;
-    height: 600px
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .js-video-container{
