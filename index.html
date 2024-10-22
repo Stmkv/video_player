@@ -7,21 +7,19 @@
   <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
-  <main>
-    <div class="cursor video-player" id="player">
+    <div id="player">
       <div class="js-video-container"></div>
       <!-- Here can be placed player controls: play and volume buttons -->
-      <div class='play'>
-        <button class="js-play-button cursor bg-icons">
-          <i class="fas fa-play icon" aria-hidden="true"></i>
+      <div class='buttons'>
+        <button class="js-play-button">
+          <i class="fa fa-play icon" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button cursor bg-icons">
+        <button class="js-pause-button">
           <i class="fa fa-pause icon" aria-hidden="true"></i>
         </button>
       </div>
     </div>
 
-  </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="static/js/player.js"></script>

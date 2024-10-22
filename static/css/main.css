@@ -1,23 +1,27 @@
-.cursor{
-    cursor: pointer
-}
-.play{
+button {
+    border-style: none;
     background-color: black;
+    margin: 3px;
+    cursor: pointer
+  }
 
-}
-.icon{
-    color:rgb(223, 210, 210);
+.buttons {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+
+.fa {
+    color: white;
     font-size: 20px;
-}
-.bg-icons {
-    background: rgba(0,0,0,0);
-    border: hidden;
-}
-.video-player{
+  }
+  #player {
     width: 800px;
     height: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+  }
 
 .js-video-container{
     width: 100%;
