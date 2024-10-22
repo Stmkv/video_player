@@ -7,3 +7,7 @@
 .cr{
     color:rgb(223, 210, 210)
 }
+.bg {
+    background: rgba(0,0,0,0);
+    border: hidden;
+}
