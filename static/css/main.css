@@ -5,11 +5,20 @@
     background-color: black;
 
 }
-.cr{
+.icon{
     color:rgb(223, 210, 210);
     font-size: 20px;
 }
-.bg {
+.bg-icons {
     background: rgba(0,0,0,0);
     border: hidden;
+}
+.video-player{
+    width: 800px;
+    height: 600px
+}
+
+.js-video-container{
+    width: 100%;
+    height: 100%;
 }
