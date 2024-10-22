@@ -3,9 +3,11 @@
 }
 .play{
     background-color: black;
+
 }
 .cr{
-    color:rgb(223, 210, 210)
+    color:rgb(223, 210, 210);
+    font-size: 20px;
 }
 .bg {
     background: rgba(0,0,0,0);
