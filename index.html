@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>ГОСТФильм</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="shortcut icon" href="static/icons8-видео-16.png" type="image/x-icon">
-  <style type='text/css'>
+  <head>
+    <title>ГОСТФильм</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="static/icons8-видео-16.png"
+      type="image/x-icon"
+    />
+    <style type="text/css">
+      .vp-player__btn {
+        border-style: none;
+        background-color: black;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+      }
 
-    button {
-      border-style: none;
-      background-color: black;
-      margin: 5px;
-      cursor: pointer;
-      width: 20px;
-
-    }
-
-    .buttons {
+      .vp-player__display {
         background-color: black;
         display: flex;
         flex-direction: row;
       }
 
-    .fa {
+      .fa {
         color: white;
         font-size: 20px;
       }
-      #player {
+      .vp-player {
         width: 800px;
         height: 600px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -34,53 +39,54 @@
         flex-direction: column;
       }
 
-    .js-video-container{
+      .js-video-container {
         width: 100%;
         height: 100%;
-    }
-    .full-button-pusher{
-      display:flex;
-      flex-grow: 1;
-    }
-    .js-fullscreen-button {
-      margin-right: 10px;
-      color: white;
-      font-size: 20px;
-    }
-
-  </style>
-</head>
-<body>
-    <div id="player">
+      }
+      .vp-player__controllers {
+        display: flex;
+        flex-grow: 1;
+      }
+      .js-fullscreen-button {
+        margin-right: 10px;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="player" class="vp-player">
       <div class="js-video-container"></div>
       <!-- Here can be placed player controls: play and volume buttons -->
-      <div class='buttons'>
-        <button class="js-play-button">
+      <div class="vp-player__display">
+        <button class="js-play-button vp-player__btn">
           <i class="fa fa-play icon" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button">
+        <button class="js-pause-button vp-player__btn">
           <i class="fa fa-pause icon" aria-hidden="true"></i>
         </button>
-        <button class="js-mute-button">
+        <button class="js-mute-button vp-player__btn">
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <button class="js-volume-button">
+        <button class="js-volume-button vp-player__btn">
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
-        <div class="full-button-pusher"></div>
-        <button class="js-fullscreen-button">
+        <div class="vp-player__controllers"></div>
+        <button class="js-fullscreen-button vp-player__btn">
           <i class="fa-solid fa-expand"></i>
         </button>
       </div>
     </div>
 
-
-  <script src="https://kit.fontawesome.com/5f50df0f8d.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-  <script src="static/js/player.js"></script>
-  <script type="text/javascript">
-    createPlayer({elementId: 'player'});
-  </script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/5f50df0f8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+    <script src="static/js/player.js"></script>
+    <script type="text/javascript">
+      createPlayer({ elementId: 'player' })
+    </script>
+  </body>
 </html>
