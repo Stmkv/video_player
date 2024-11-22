@@ -73,6 +73,28 @@
         margin-left: -7px;
         margin-right: -27px;
       }
+      .vp-player__progress-bar {
+        display: flex;
+        flex-grow: 1;
+        background-color: black;
+        align-items: center;
+        margin-right: 11px;
+        margin-left: 11px;
+      }
+      .vp-player__progress-bar-slider {
+        background-color: red;
+        border-radius: 15px;
+        height: 6px;
+      }
+      .dot {
+        height: 11px;
+        width: 11px;
+        background-color: red;
+        border-radius: 50%;
+        border: 4px solid white;
+        box-shadow: inset 0 0 2px black;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -93,13 +115,19 @@
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
         <div style="color: white" class="vp-player__timer">
-          <span class="js-current-time"></span>
-          <div class="js-progress" style="background-color: grey">
-            <div class="js-progress-slider" style="background-color: red">
-              Прогресс
-            </div>
+          <div style="color: white" class="vp-player__timer-rigth">
+            <span class="js-current-time"></span>
           </div>
-          <span class="js-duration"></span>
+          <div class="js-progress vp-player__progress-bar">
+            <div
+              class="js-progress-slider vp-player__progress-bar-slider"
+            ></div>
+            <span class="dot"></span>
+          </div>
+
+          <div style="color: white" class="vp-player__timer-left">
+            <span class="js-duration"></span>
+          </div>
         </div>
 
         <div class="vp-player__controllers"></div>
