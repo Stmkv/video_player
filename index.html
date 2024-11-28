@@ -28,8 +28,8 @@
         padding: 0;
       }
 
-      .vp-player__display {
-        height: 50px;
+      .vp-player__controller {
+        height: 45px;
         background-color: black;
         display: flex;
         flex-direction: row;
@@ -71,8 +71,8 @@
         font-family: 'Roboto', serif;
         font-weight: 400;
         font-size: 17px;
-        margin-left: -7px;
-        margin-right: -27px;
+        margin-left: -5px;
+        margin-right: -15px;
       }
       .vp-player__progress-bar {
         display: flex;
@@ -115,7 +115,7 @@
     <div id="player" class="vp-player">
       <div class="js-video-container"></div>
       <!-- Here can be placed player controls: play and volume buttons -->
-      <div class="vp-player__display">
+      <div class="vp-player__controller">
         <button class="js-play-button vp-player__btn">
           <i class="fa fa-play icon" aria-hidden="true"></i>
         </button>
@@ -144,7 +144,6 @@
           </div>
         </div>
 
-        <div class="vp-player__controllers"></div>
         <button class="js-fullscreen-button vp-player__btn">
           <i class="fa-solid fa-expand"></i>
         </button>
