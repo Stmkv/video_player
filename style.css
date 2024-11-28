@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .vp-player {
   border: 5px solid rgb(167, 165, 165);
 }
+
 .vp-player__btn {
   border-style: none;
   background-color: black;
@@ -11,6 +13,7 @@
   margin: 0;
   padding: 0;
   color: white;
+  font-size: 15px;
 }
 
 .vp-player__controller {
@@ -20,10 +23,6 @@
   align-items: center;
 }
 
-.fa.fa-volume-off,
-.fa.fa-volume-up {
-  font-size: 15px;
-}
 .vp-player__timer-rigth {
   margin-left: 3px;
   color: white;
@@ -44,9 +43,11 @@
 .vp-player__container {
   flex-grow: 1;
 }
+
 .js-fullscreen-button {
   font-size: 15px;
 }
+
 .vp-player__timer {
   flex-grow: 1;
   display: flex;
@@ -66,20 +67,22 @@
   margin-left: 11px;
   flex-shrink: 0;
 }
-.vp-player__progress-bar:hover {
-  .dot {
-    background-color: red;
-    opacity: 1;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-  }
+
+.vp-player__progress-bar:hover .dot {
+  background-color: red;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
 }
+
 .vp-player__progress-bar-slider {
   background-color: red;
   border-radius: 15px;
   height: 6px;
 }
+
 .dot {
   opacity: 0;
   height: 11px;
